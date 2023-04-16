@@ -1,0 +1,35 @@
+#Create Data
+{
+    "name":string,
+    "year":number,
+    "author":string,
+    "summary":string,
+    "publisher":string,
+    "pageCount":number,
+    "readPage":number,
+    "reading":boolean
+}
+{
+    "id":nanoid(10)
+    "name":string,
+    "year":number,
+    "author":string,
+    "summary":string,
+    "publisher":string,
+    "pageCount":number,
+    "readPage":number,
+    "finished": boolean,
+    "reading":boolean,
+    "insertadAt": time,
+    "updatedAt":time
+}
+++ jika finished = true (readPage = pageCount)
+++ jika finished = false (readPage < pageCount)
+++ jika finished = undefined (readPage > pageCount)
+
+#Melihat data array
+{
+    "id":nanoid(10),
+    "name":string,
+    "publisher":string
+}
